@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import ArticleCard from "./components/ArticleCard";
+import ArticleGrid from "./components/ArticleGrid"
 
 function App() {
   const [data, setData] = useState(null);
@@ -17,14 +17,9 @@ function App() {
     <div className="App">
       <Header />
       Hello Daily Bruin!
-      <Footer />
-      {/* TO TEST OUT THE ARTICLECARD COMPONENT */}
-      {data && data.articles.map((article, index) => (
-        <ArticleCard 
-          index={index}
-          props={article} // Pass the entire article object as `props`
-        />
-      ))}
+      <Footer/>
+      <ArticleGrid />
+
     </div>
   );
 }
