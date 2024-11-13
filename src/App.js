@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ArticleGrid from "./components/ArticleGrid"
 
 function App() {
   const [ data, setData ] = useState(null);
@@ -17,6 +18,8 @@ function App() {
       <Header/>
       Hello Daily Bruin!
       <Footer/>
+      <ArticleGrid />
+
     </div>
   );
 }
