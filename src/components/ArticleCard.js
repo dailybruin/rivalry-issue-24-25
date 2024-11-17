@@ -24,7 +24,8 @@ const ArticleContainer = styled("div")`
   transition: box-shadow 0.3s ease-in-out;
 
   &:hover {
-    box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.4); /* blurred shadow effect */
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.3), 
+              0 0 30px 15px ${(props) => props.bgColor}; 
   }
 
   @media (max-width: 900px) {
