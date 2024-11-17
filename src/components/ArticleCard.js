@@ -41,6 +41,9 @@ const ArticleContainer = styled("div")`
     props.bgColor}; /* random background color passed as prop */
   transition: box-shadow 0.3s ease-in-out;
 
+
+
+
   &:hover {
     box-shadow:
     //  0 0 20px 15px rgba(255, 255, 255, 0.3),
