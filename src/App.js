@@ -17,8 +17,9 @@ function App() {
     <div className="App">
       <Header />
       Hello Daily Bruin!
-      <Footer/>
       <ArticleGrid />
+      <Footer/>
+
 
     </div>
   );
