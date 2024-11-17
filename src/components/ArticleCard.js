@@ -1,7 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-const colorSequence = ["#8DC056", "#E1823E;", "#7CC4B2", "#63BEEB", "#D1C704", "#CE9FD1"];
+const colorSequence = [
+  "#8DC056",
+  "#E1823E;",
+  "#7CC4B2",
+  "#63BEEB",
+  "#D1C704",
+  "#CE9FD1",
+];
 
 const ArticleContainer = styled("div")`
   // outermost container
@@ -11,17 +18,18 @@ const ArticleContainer = styled("div")`
   justify-content: space-between;
   margin: 3%;
   max-width: 100%;
-
   width: 212.199px;
   min-height: 305.061px;
   height: auto;
   flex-shrink: 0;
-  background: ${(props) => props.bgColor}; /* random background color passed as prop */
+  background: ${(props) =>
+    props.bgColor}; /* random background color passed as prop */
   transition: box-shadow 0.3s ease-in-out;
 
   &:hover {
-  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.3), 
-              0 0 30px 15px ${(props) => props.bgColor}; 
+    box-shadow:
+    //  0 0 20px 7.5px rgba(255, 255, 255, 0.3),
+      0 0 20px 7.5px ${(props) => props.bgColor};
   }
 
   @media (max-width: 900px) {
@@ -46,20 +54,27 @@ const BoxContainer = styled("div")`
 `;
 
 const TitleContainer = styled("div")`
-  padding: 2% 0;
+
   position: relative;
   overflow-wrap: break-word;
   word-break: break-word;
   line-height: 22px;
   display: flex;
-  width: 182.221px;
+
+  //no text padding in the title for mobile
+  padding: 5% 0% 0% 5%;
+  width: 162.221px;
+
+  //if they would like text padding in the title:
+  // padding: 2% 0;
+  // width: 182.221px;
+
   height: 41.807px;
   flex-direction: column;
-//   justify-content: center;
+  //   justify-content: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  color: #FFF;
-
+  color: #fff;
   color: #fff;
   text-align: center;
   font-family: Angkor;
@@ -67,10 +82,10 @@ const TitleContainer = styled("div")`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-transform: uppercase;
 `;
 
 const AuthorContainer = styled("div")`
-  
   padding: 0 5%; // to center the author container
   position: relative;
   overflow-wrap: break-word;
@@ -91,6 +106,7 @@ const AuthorContainer = styled("div")`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  text-transform: uppercase;
   .angkor-regular {
     font-family: "Angkor", serif;
     font-weight: 400;
@@ -98,18 +114,16 @@ const AuthorContainer = styled("div")`
   }
 `;
 
-const ArticleCard = ({ props,index }) => {
+const ArticleCard = ({ props, index }) => {
   const bgColor = colorSequence[index % colorSequence.length]; // Cycle through colors in sequence
   return (
     <ArticleContainer bgColor={bgColor}>
       <BoxContainer>
         <TitleContainer>{props.article_title}</TitleContainer>
       </BoxContainer>
-      <AuthorContainer>{props.article_title}</AuthorContainer>
+      <AuthorContainer>{props.article_byline}</AuthorContainer>
     </ArticleContainer>
   );
 };
 
-
 export default ArticleCard;
-
