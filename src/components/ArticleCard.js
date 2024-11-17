@@ -14,11 +14,17 @@ const ArticleContainer = styled("div")`
   height: auto;
   flex-shrink: 0;
   background: #e1823e;
+  transition: box-shadow 0.3s ease-in-out; /* smooth transition for hover effect */
+
 
   @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  &:hover {
+    box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.4); /* More noticeable shadow blur */
   }
 `;
 
