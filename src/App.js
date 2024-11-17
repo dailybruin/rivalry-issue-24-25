@@ -21,7 +21,7 @@ function App() {
       {/* TO TEST OUT THE ARTICLECARD COMPONENT */}
       {data && data.articles.map((article, index) => (
         <ArticleCard 
-          key={index}
+          index={index}
           props={article} // Pass the entire article object as `props`
         />
       ))}

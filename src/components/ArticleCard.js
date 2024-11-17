@@ -1,11 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const colors = ["#28a745", "#E1823E", "#007BFF", "#20c997", "#ffc107", "#ff66cc"]; 
-
-const getRandomColor = () => {
-  return colors[Math.floor(Math.random() * colors.length)];
-};
+const colorSequence = ["#8DC056", "#E1823E;", "#7CC4B2", "#63BEEB", "#D1C704", "#CE9FD1"];
 
 const ArticleContainer = styled("div")`
   // outermost container
@@ -102,10 +98,10 @@ const AuthorContainer = styled("div")`
   }
 `;
 
-const ArticleCard = ({ props }) => {
-  const randomColor = getRandomColor(); // Get random color for the background
+const ArticleCard = ({ props,index }) => {
+  const bgColor = colorSequence[index % colorSequence.length]; // Cycle through colors in sequence
   return (
-    <ArticleContainer bgColor={randomColor}>
+    <ArticleContainer bgColor={bgColor}>
       <BoxContainer>
         <TitleContainer>{props.article_title}</TitleContainer>
       </BoxContainer>
@@ -113,6 +109,7 @@ const ArticleCard = ({ props }) => {
     </ArticleContainer>
   );
 };
+
 
 export default ArticleCard;
 
