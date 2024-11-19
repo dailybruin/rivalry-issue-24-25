@@ -62,8 +62,8 @@ const TitleContainer = styled("div")`
   display: flex;
 
   //no text padding in the title for mobile
-  padding: 5% 0% 0% 5%;
-  width: 162.221px;
+  padding: 5% 0% 0% 4%;
+  width: 170.221px;
 
   //if they would like text padding in the title:
   // padding: 2% 0;
