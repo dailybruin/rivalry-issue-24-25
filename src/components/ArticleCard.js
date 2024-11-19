@@ -92,8 +92,9 @@ const TitleContainer = styled("div")`
   line-height: normal;
   text-transform: uppercase;
 
+
   @media (max-width: 900px) {
-    padding: 5% 0% 0% 4%;
+    padding: 5% 0% 0% 0%;
     font-size: 12px;
     height: 41.807px;
     flex-direction: column;
