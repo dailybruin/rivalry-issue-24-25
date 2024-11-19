@@ -28,8 +28,8 @@ const ArticleContainer = styled("div")`
 
   &:hover {
     box-shadow:
-    //  0 0 20px 7.5px rgba(255, 255, 255, 0.3),
-      0 0 20px 7.5px ${(props) => props.bgColor};
+    //  0 0 20px 15px rgba(255, 255, 255, 0.3),
+      0 0 12px 10px ${(props) => props.bgColor};
   }
 
   @media (max-width: 900px) {
@@ -40,6 +40,10 @@ const ArticleContainer = styled("div")`
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    &:hover {
+      box-shadow: 0 0 7px 7.5px ${(props) => props.bgColor};
+    }
   }
 `;
 
@@ -92,7 +96,6 @@ const TitleContainer = styled("div")`
   line-height: normal;
   text-transform: uppercase;
 
-
   @media (max-width: 900px) {
     padding: 5% 0% 0% 0%;
     font-size: 12px;
@@ -116,7 +119,7 @@ const AuthorContainer = styled("div")`
   flex-direction: column;
   flex-shrink: 0;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   color: #000;
   text-align: center;
   font-family: "Alumni Sans";
