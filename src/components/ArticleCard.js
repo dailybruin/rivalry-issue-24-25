@@ -74,15 +74,8 @@ const TitleContainer = styled("div")`
   word-break: break-word;
   line-height: 22px;
   display: flex;
-
-  //no text padding in the title for mobile
-  padding: 5% 0% 0% 4%;
-  width: 170.221px;
-
-  //if they would like text padding in the title:
-  // padding: 2% 0;
-  // width: 182.221px;
-
+  padding: 5% 0% 0% 5%;
+  width: 323px;
   height: 41.807px;
   flex-direction: column;
   //   justify-content: center;
@@ -92,31 +85,41 @@ const TitleContainer = styled("div")`
   color: #fff;
   text-align: center;
   font-family: Angkor;
-  font-size: 12px;
+
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+
+  @media (max-width: 900px) {
+    padding: 5% 0% 0% 4%;
+    font-size: 12px;
+    height: 41.807px;
+    flex-direction: column;
+    width: 170.221px;
+  }
 `;
 
 const AuthorContainer = styled("div")`
-  padding: 0 5%; // to center the author container
+  padding: 0% 0% 4% 7%; // to center the author container
   position: relative;
   overflow-wrap: break-word;
   word-break: break-word;
-  line-height: 24px;
+  line-height: normal;
+  margin-top: -10px;
   display: flex;
-  width: 183.748px;
-  min-height: 41.887px;
+  width: 364px;
+  min-height: 78px;
   height: auto;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   flex-shrink: 0;
+  justify-content: center;
+  align-items: center; 
   color: #000;
   text-align: center;
   font-family: "Alumni Sans";
-  font-size: 20px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -125,6 +128,24 @@ const AuthorContainer = styled("div")`
     font-family: "Angkor", serif;
     font-weight: 400;
     font-style: normal;
+  }
+  @media (max-width: 900px) {
+    padding: 0 5%; // to center the author container
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 183.748px;
+    min-height: 41.887px;
+    height: auto;
+    display: flex;
+    width: 183.748px;
+    min-height: 41.887px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
   }
 `;
 
