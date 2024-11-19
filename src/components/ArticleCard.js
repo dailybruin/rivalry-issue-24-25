@@ -18,8 +18,8 @@ const ArticleContainer = styled("div")`
   justify-content: space-between;
   margin: 3%;
   max-width: 100%;
-  width: 212.199px;
-  min-height: 305.061px;
+  width: 420.14px;
+  min-height: 604px;
   height: auto;
   flex-shrink: 0;
   background: ${(props) =>
@@ -33,6 +33,10 @@ const ArticleContainer = styled("div")`
   }
 
   @media (max-width: 900px) {
+    max-width: 100%;
+    width: 212.199px;
+    min-height: 305.061px;
+    height: auto;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -45,16 +49,26 @@ const BoxContainer = styled("div")`
   flex-direction: column;
   max-width: 100%;
   flex-grow: 1;
-
-  width: 183.748px;
-  height: 234.723px;
+  width: 363.808px;
+  min-height: 464.736px;
+  height: auto;
   flex-shrink: 0;
   background: #000;
-  margin: 14.2px 13.8px 0px 13.8px;
+  margin: 27.38px 111.8px 28.17px 28.17px;
+
+  @media (max-width: 900px) {
+    width: 183.748px;
+    min-height: 234.723px;
+    height: auto;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 14.2px 13.8px 0px 13.8px;
+  }
 `;
 
 const TitleContainer = styled("div")`
-
   position: relative;
   overflow-wrap: break-word;
   word-break: break-word;
