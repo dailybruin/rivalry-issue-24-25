@@ -133,6 +133,7 @@ const AuthorContainer = styled("div")`
     padding: 0 5%; // to center the author container
     font-size: 20px;
     font-style: normal;
+    margin-top: 0px;
     font-weight: 500;
     line-height: normal;
     width: 183.748px;
