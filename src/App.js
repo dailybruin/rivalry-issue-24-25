@@ -40,6 +40,7 @@ function App() {
       ))}
       </Background>  
       <Footer />
+      </Background>
     </div>
     
   );
