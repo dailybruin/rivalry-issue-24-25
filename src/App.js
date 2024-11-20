@@ -4,7 +4,7 @@ import Header from './components/Header';
 import styled from 'styled-components';
 import background from './images/background.png';
 import Footer from './components/Footer';
-import ArticleCard from "./components/ArticleCard";
+import ArticleGrid from "./components/ArticleGrid"
 
 function App() {
   const [data, setData] = useState(null);
@@ -26,23 +26,19 @@ function App() {
   `;
 
 
-  return (
+  return data && (
     <div className="App">
       <Background>
       <Header />
       Hello Daily Bruin!
-      {/* TO TEST OUT THE ARTICLECARD COMPONENT */}
-      {data && data.articles.map((article, index) => (
-        <ArticleCard 
-          index={index}
-          props={article} // Pass the entire article object as `props`
-        />
-      ))}
-      </Background>  
+      <ArticleGrid articles={data.articles} />
       <Footer />
+      </Background>
     </div>
     
   );
 }
 
 export default App;
+
+

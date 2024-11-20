@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
+
+
+
 const colorSequence = [
-  "#8DC056",
-  "#E1823E;",
-  "#7CC4B2",
-  "#63BEEB",
-  "#D1C704",
-  "#CE9FD1",
+"#8DC056",
+"#E1823E;",
+"#7CC4B2",
+"#63BEEB",
+"#D1C704",
+"#CE9FD1",
 ];
 
 const imageSequence = [
@@ -59,6 +62,9 @@ const ArticleContainer = styled("div")`
   }
 `;
 
+
+
+
 const BoxContainer = styled("div")`
   position: relative;
   display: flex;
@@ -100,6 +106,9 @@ const BoxContainer = styled("div")`
   }
 `;
 
+
+
+
 const TitleContainer = styled("div")`
   position: relative;
   overflow-wrap: break-word;
@@ -134,6 +143,9 @@ const TitleContainer = styled("div")`
     width: 170.221px;
   }
 `;
+
+
+
 
 const AuthorContainer = styled("div")`
   padding: 0% 0% 4% 7%; // to center the author container
@@ -197,5 +209,8 @@ const ArticleCard = ({ props, index }) => {
     </ArticleContainer>
   );
 };
+
+
+
 
 export default ArticleCard;
