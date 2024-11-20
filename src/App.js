@@ -40,6 +40,7 @@ function App() {
           props={article} // Pass the entire article object as `props`
         />
       ))}
+      </Background>
     </div>
     
   );
