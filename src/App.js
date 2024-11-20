@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import background from './images/background.png';
 import Footer from './components/Footer';
 import ArticleGrid from "./components/ArticleGrid"
-import ArticleCard from "./components/ArticleCard";
 
 function App() {
   const [data, setData] = useState(null);
@@ -27,19 +26,13 @@ function App() {
   `;
 
 
-  return (
+  return data && (
     <div className="App">
       <Background>
       <Header />
       Hello Daily Bruin!
+      <ArticleGrid articles={data.articles} />
       <Footer />
-      {/* TO TEST OUT THE ARTICLECARD COMPONENT */}
-      {data && data.articles.map((article, index) => (
-        <ArticleCard 
-          index={index}
-          props={article} // Pass the entire article object as `props`
-        />
-      ))}
       </Background>
     </div>
     
@@ -47,3 +40,5 @@ function App() {
 }
 
 export default App;
+
+
