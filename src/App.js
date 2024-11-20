@@ -38,7 +38,7 @@ function App() {
           props={article} // Pass the entire article object as `props`
         />
       ))}
-      </Background>  
+      </Background>
       <Footer />
     </div>
     
