@@ -79,8 +79,7 @@ const Footer = () => {
           <img src={email} alt="" />
         </a>
         <p>
-          Built with Suzy’s <span className="heart">♥</span> in Kerckhoff 118 by
-          [developers]. Designed by [designers].
+          Built with Suzy’s <span className="heart">♥</span> in Kerckhoff 118 by Emily Zhang,  Kirsten Reign Cabalonga, Sahil Sheth, Evelyn Cho, Armaan Bassi, Jennifer Lee, Henry Nguyen, Max Fukuhara, Ritvik Irigireddy, and Sakshi Thoutireddy. Designed by Lindsey Murto.
         </p>
       </Socials>
     </Container>
