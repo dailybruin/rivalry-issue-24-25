@@ -60,6 +60,18 @@ const BoxContainer = styled("div")`
   background: #000;
   margin: 27.38px 111.8px 28.17px 28.17px;
 
+  img {
+    position: absolute /* to allow overlap */
+    top: 10%
+    left: 50%
+    transform: translate(-50%, -10%)
+    width: 90%
+    height: auto; 
+    object-fit: cover
+  
+  }
+
+
   @media (max-width: 900px) {
     width: 183.748px;
     min-height: 234.723px;
@@ -69,6 +81,10 @@ const BoxContainer = styled("div")`
     align-items: center;
     text-align: center;
     margin: 14.2px 13.8px 0px 13.8px;
+
+    img {
+      width: 95% /* scaling for mobile */
+    }
   }
 `;
 
@@ -160,6 +176,7 @@ const ArticleCard = ({ props, index }) => {
     <ArticleContainer bgColor={bgColor}>
       <BoxContainer>
         <TitleContainer>{props.article_title}</TitleContainer>
+        <img src = {props.article_image} alt = "Article Image" />
       </BoxContainer>
       <AuthorContainer>{props.article_byline}</AuthorContainer>
     </ArticleContainer>
