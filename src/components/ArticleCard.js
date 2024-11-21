@@ -18,8 +18,8 @@ const ArticleContainer = styled("div")`
   justify-content: space-between;
   margin: 3%;
   max-width: 100%;
-  width: 420.14px;
-  min-height: 604px;
+  width: 420.14px; /* updated for desktop size from 212.199px for mobile */
+  min-height: 604px; /* updated for desktop size */
   height: auto;
   flex-shrink: 0;
   background: ${(props) =>
@@ -53,8 +53,8 @@ const BoxContainer = styled("div")`
   flex-direction: column;
   max-width: 100%;
   flex-grow: 1;
-  width: 363.808px;
-  min-height: 464.736px;
+  width: 363.808px; /* updated for desktop size */
+  min-height: 464.736px; /* updated for desktop size */
   height: auto;
   flex-shrink: 0;
   background: #000;
@@ -79,8 +79,8 @@ const TitleContainer = styled("div")`
   line-height: 22px;
   display: flex;
   padding: 5% 0% 0% 5%;
-  width: 323px;
-  height: 41.807px;
+  width: 323px; /* updated for desktop size */
+  height: 41.807px; /* updated for desktop size */
   flex-direction: column;
   //   justify-content: center;
   justify-content: flex-start;
@@ -90,7 +90,7 @@ const TitleContainer = styled("div")`
   text-align: center;
   font-family: Angkor;
 
-  font-size: 22px;
+  font-size: 22px; /* updated for desktop size */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -113,8 +113,8 @@ const AuthorContainer = styled("div")`
   line-height: normal;
   margin-top: -10px;
   display: flex;
-  width: 364px;
-  min-height: 78px;
+  width: 364px; /* updated for desktop size */
+  min-height: 78px; /* updated for desktop size */
   height: auto;
   flex-direction: column;
   flex-shrink: 0;
@@ -123,7 +123,7 @@ const AuthorContainer = styled("div")`
   color: #000;
   text-align: center;
   font-family: "Alumni Sans";
-  font-size: 30px;
+  font-size: 30px; /* updated for desktop size */
   font-style: normal;
   font-weight: 500;
   line-height: normal;
