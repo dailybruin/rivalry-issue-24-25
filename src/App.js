@@ -4,7 +4,8 @@ import Header from './components/Header';
 import styled from 'styled-components';
 import background from './images/background.png';
 import Footer from './components/Footer';
-import ArticleGrid from "./components/ArticleGrid"
+import ArticleGrid from "./components/ArticleGrid";
+import Landing from './components/Landing';
 
 function App() {
   const [data, setData] = useState(null);
@@ -30,8 +31,8 @@ function App() {
     <div className="App">
       <Background>
       <Header />
-      Hello Daily Bruin!
-      <ArticleGrid articles={data.articles} />
+      <Landing landing={data.landing_image}/>
+      <ArticleGrid articles={data.articles}/>
       <Footer />
       </Background>
     </div>
