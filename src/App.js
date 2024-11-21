@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <Background>
       <Header />
-      <Landing landing={data.landing_image}/>
+      <Landing landing={data.landing_image} credits={data.landing_credits}/>
       <ArticleGrid articles={data.articles}/>
       <Footer />
       </Background>
