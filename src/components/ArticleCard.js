@@ -28,6 +28,10 @@ width: 212.199px;
 min-height: 305.061px;
 height: auto;
 flex-shrink: 0;
+a {
+  text-decoration: none;
+  color: inherit; 
+}
 background: ${(props) =>
   props.bgColor}; /* random background color passed as prop */
 transition: box-shadow 0.3s ease-in-out;
@@ -155,11 +159,14 @@ text-transform: uppercase;
 
 const ArticleCard = ({ props, bgColor, as }) => {
 return (
+  
   <ArticleContainer as={as} bgColor={bgColor}>
+    <a href={props.article_url} >
     <BoxContainer>
       <TitleContainer>{props.article_title}</TitleContainer>
     </BoxContainer>
     <AuthorContainer>{props.article_byline}</AuthorContainer>
+    </a>
   </ArticleContainer>
 );
 };

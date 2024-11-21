@@ -26,10 +26,9 @@ const Image = styled.img`
 const Credits= styled.div`
   background-color: black;
   color: white;
-  width: 100%;
+  width: 220%;
   padding: 1em;
   height: 1em;
-  margin-right: 1em;
   font-family: Angkor;
   font-size: 16px;
   font-weight: 400;
@@ -40,13 +39,13 @@ const Credits= styled.div`
 
 `;
 
-const Landing = ({landing}) => {
+const Landing = ({landing, credits}) => {
     
     return (
         <>
             <Container>
                 <Image src={landing} alt="Landing image" />
-                <Credits>Landing ILO Credits</Credits> {/*landing.landing_credits*/}
+                <Credits>{credits}</Credits> {/*landing.landing_credits*/}
             </Container>
         </>
     );
