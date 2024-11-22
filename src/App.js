@@ -6,6 +6,7 @@ import background from './images/background.png';
 import Footer from './components/Footer';
 import ArticleGrid from "./components/ArticleGrid";
 import Landing from './components/Landing';
+import Interactive from './components/Interactive';
 
 function App() {
   const [data, setData] = useState(null);
@@ -33,6 +34,7 @@ function App() {
       <Header />
       <Landing landing={data.landing_image} credits={data.landing_credits}/>
       <ArticleGrid articles={data.articles}/>
+      <Interactive/>
       <Footer />
       </Background>
     </div>

@@ -176,13 +176,13 @@ const ArticleCard = ({ props, bgColor, as, articleCardImage}) => {
 return (
   
   <ArticleContainer as={as} bgColor={bgColor}>
-
+    <a href={props.article_url} style={{ textDecoration: 'none' }} >
     <BoxContainer>
       <TitleContainer>{props.article_title}</TitleContainer>
       <img src = {articleCardImage} alt = "Article Image" />
     </BoxContainer>
     <AuthorContainer>{props.article_byline}</AuthorContainer>
-
+    </a>
   </ArticleContainer>
 );
 };
