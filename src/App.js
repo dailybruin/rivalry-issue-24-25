@@ -26,7 +26,6 @@ function App() {
     #000000; /* Black fallback background */
   background-size: cover; /* Ensures the image covers the container */
   border: 2px solid black;
-  z-index: -1;
   padding-bottom: 10em;
   
   `;
@@ -34,7 +33,6 @@ function App() {
   const Box = styled.div`
   width: 100%;
   background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #000000 79%);
-  z-index: 10;
   position: relative;
   pointer-events: none;
 
