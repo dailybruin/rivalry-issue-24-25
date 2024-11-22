@@ -40,8 +40,8 @@ const Title = styled("div")`
     font-size: 20px;
     height: 41.807px;
     flex-direction: column;
-    width: 40%;
-    margin-left: 6em;
+    width: 50%;
+    margin-left: 15%;
   }
 `;
 
