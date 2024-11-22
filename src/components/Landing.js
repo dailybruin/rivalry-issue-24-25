@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Video from "../images/Rivalry.gif"
 
 
 const Container = styled.div`
@@ -45,7 +46,7 @@ const Landing = ({landing, credits}) => {
     return (
         <>
             <Container>
-                <Image src={landing} alt="Landing image" />
+                <Image src={Video} alt="Landing image" />
                 <Credits>{credits}</Credits> {/*landing.landing_credits*/}
             </Container>
             

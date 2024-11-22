@@ -7,6 +7,8 @@ import email from "../images/socials/email.svg";
 import styled from "styled-components";
 import { mediaQueries } from "../shared/config";
 
+
+
 const Container = styled.div`
   background: black;
   height: auto;
@@ -43,6 +45,7 @@ const Socials = styled.div`
 
 const Footer = () => {
   return (
+    <>
     <Container>
       <h1>DAILY BRUIN</h1>
       <Socials>
@@ -82,6 +85,7 @@ const Footer = () => {
         </p>
       </Socials>
     </Container>
+    </>
   );
 };
 
