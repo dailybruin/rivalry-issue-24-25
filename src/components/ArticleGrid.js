@@ -10,6 +10,8 @@ const Container = styled.div`
   flex-direction: column;
   gap: 15vw;
   margin: 30vw auto;
+  margin-top: 10em;
+  margin-bottom: 10em;
   width: 50%;
 
 
@@ -18,7 +20,6 @@ const Container = styled.div`
   @media (max-width: 768px) {
       width: 70%;
       gap: 10vw;
-      padding-bottom: 10em;
   }
 `;
 

@@ -25,18 +25,23 @@ function App() {
     url(${background}) no-repeat center, /* Top layer background */
     #000000; /* Black fallback background */
   background-size: cover; /* Ensures the image covers the container */
+  border: 2px solid black;
+  
   `;
 
 
   return data && (
     <div className="App">
-      <Background>
+      
       <Header />
       <Landing landing={data.landing_image} credits={data.landing_credits}/>
+      <Background>
       <ArticleGrid articles={data.articles}/>
       <Interactive/>
-      <Footer />
       </Background>
+      <Footer />
+
+      
     </div>
     
   );

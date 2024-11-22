@@ -25,7 +25,7 @@ const Title = styled("div")`
   position: relative;
   line-height: 22px;
   display: flex;
-  left: 15%;
+  width: 100%;
   text-align: center;
   font-family: Angkor;
   color: white;
@@ -36,18 +36,19 @@ const Title = styled("div")`
   text-transform: uppercase;
   @media (max-width: 1000px) {
     padding: 5% 0% 0% 0%;
-    margin-bottom: 10px;
+    margin-bottom: 5em;
     font-size: 20px;
     height: 41.807px;
     flex-direction: column;
     width: 50%;
-    margin-left: 15%;
+    margin-left: 25%;
   }
 `;
 
 const Blurb = styled.div`
     gap: 0px;
-    left: 20%;
+    margin-left: 15%;
+    width: 50%;
     opacity: 0px;
     font-family: Angkor;
     font-size: 22px;
@@ -94,8 +95,8 @@ const Interactive = () => {
     return (
         <>
             
-                <Title>INTERACTIVE TITLE CAN GO HERE</Title>
-                <Blurb>blurb can go here blurb can go here blurb can go here blurb can go here blurb can go here blurb can go here</Blurb>
+                <Title>Long Roads Home: Breaking down UCLA and USC’s first Big Ten travels</Title>
+                <Blurb>Both UCLA football and USC embarked on their inaugural seasons in the Big Ten this season – a conference realignment that accompanied new rivals as well as dramatic logistical differences. By season’s end, the Bruins will have traveled a Big Ten-high 22,048 miles and the Trojans 12,710 miles. These videos track the teams’ travels across the country throughout the season, offering a visual breakdown of the total miles racked up on UCLA and USC’s way to compete against some of the nation’s toughest opponents.</Blurb>
                 <Container>
                 <Box1>
                 <iframe width="100%" height="100%" src={USC} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="width: 100%; height: 100%; border: none;"></iframe>

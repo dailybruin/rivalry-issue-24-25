@@ -8,7 +8,7 @@ import styled from "styled-components";
 import { mediaQueries } from "../shared/config";
 
 const Container = styled.div`
-  background-color: black;
+  background: black;
   height: auto;
   color: #7dc3b5;
   padding: 60px 0 10px 0;
@@ -18,7 +18,6 @@ const Container = styled.div`
     font-family: "Times New Roman", Times, serif;
     font-size: 30px;
   }
-
   .heart {
     color: red;
   }
