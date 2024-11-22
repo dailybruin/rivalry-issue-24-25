@@ -171,15 +171,15 @@ const AuthorContainer = styled("div")`
 
 
 
-const ArticleCard = ({ props, bgColor, as, articleCardImage}) => {
+const ArticleCard = ({ props, as}) => {
 
 return (
   
-  <ArticleContainer as={as} bgColor={bgColor}>
+  <ArticleContainer as={as} bgColor={props.article_color}>
     <a href={props.article_url} style={{ textDecoration: 'none' }} >
     <BoxContainer>
       <TitleContainer>{props.article_title}</TitleContainer>
-      <img src = {articleCardImage} alt = "Article Image" />
+      <img src = {props.article_image} alt = "Article Image" />
     </BoxContainer>
     <AuthorContainer>{props.article_byline}</AuthorContainer>
     </a>
